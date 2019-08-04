@@ -1,0 +1,202 @@
+html {
+	background-color: #fcfcfc;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;	
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+h1 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 265%;
+	color: #fff;
+	
+}
+
+h2 {
+	color: #004093;
+	font-weight: normal;
+	font-size: 165%;
+	
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-left: 40px;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+header {
+	padding-top: 20px;
+	color: #888;
+	background-image: url(images/placeholder-main.jpg);
+	background-position: center left;
+	background-repeat: no-repeat;
+	
+}
+
+
+header p {
+	margin: 0;
+}
+
+/* Site navigation*/
+
+.site-nav {
+	margin-top: 20px;
+	
+}
+
+.site-nav ul{
+	margin: 0;
+	padding: 0;	
+}
+
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+	font-size: 100%;
+}
+
+
+.site-nav a {
+    display: block;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #004093;
+	padding-top: 10px;
+	padding-right: 40px;
+}
+
+.site-nav a:hover {	
+	text-decoration: underline;
+}
+
+/* End Site navigation*/
+
+
+.main-area {
+	width: auto;
+	float: left;
+	margin-top: 20px;	
+	box-sizing: border-box;
+	border-bottom: 2px solid black;
+	
+}
+
+aside {
+	width: auto;
+	float:left;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #fddffd;
+}
+
+article {
+	width: auto;
+	float: left;
+	margin-top: 20px;
+	padding-top: 20px;
+	box-sizing: border-box;
+	border-top: 2px solid black;
+}
+
+article h1 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 165%;
+	color: #004093;
+}
+
+
+
+footer {
+	text-align: center;
+	padding: 20px;	
+	
+	font-size: 85%;
+	color: #333;
+	float: left;
+}
+
+/* Media Queries begin */
+
+@media screen and (min-width: 1300px) {
+	body {
+		font-size: 120%; 
+	}
+}
+
+@media screen and (min-width: 480px) {
+	/* card stuff begins*/
+
+.card {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	
+}
+
+
+.thumbnail {
+	padding-top: 0px;
+	
+}
+
+.excerpt {
+	margin-top: 0px;
+	padding-left: 30px;
+}
+
+/* card stuff ends*/
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.site-nav a {
+		text-decoration: none;
+		background-color: #004093;
+		color: #fff;
+		width: 50%;
+		margin-right: 0;
+	}
+}
+
+/* Media Queries end */
+
+.fix {
+	clear:both;
+}
+
+/* Group class containing the clearfix method, 
+to clear contained floats, thereby making parent divs aware of floated children*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
